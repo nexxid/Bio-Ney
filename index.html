@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Neyoo</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            flex: 1;
+        }
+        .content h2 {
+            font-size: 2em;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .content h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+        .content img::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 170px;
+            height: 170px;
+            border: 5px solid #ff9900;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .content img::after {
+            content: '🌟';
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            font-size: 2em;
+            color: #ff9900;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin: 10px 0 20px 0;
+        }
+        .buttons {
+            margin-top: 10px;
+        }
+        .buttons .button {
+            background: linear-gradient(45deg, #ff9900, #ff6600);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            margin: 5px 0;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 250px;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .buttons .button:hover {
+            background: linear-gradient(45deg, #ff6600, #ff9900);
+        }
+        .buttons .button + .button {
+            margin-top: 10px;
+        }
+        .logos {
+            margin-top: 20px;
+        }
+        .logos a {
+            color: white;
+            font-size: 2em;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .logos a:hover {
+            color: #ff9900;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="https://pomf2.lain.la/f/910ut1o2.jpg" alt="Anime character with black hair and cat ears, smiling with eyes closed" style="border-radius: 50%;">
+        <h2 style="text-align: center;">Neyoo</h2>
+        <p>Creator bot</p>
+        <div class="buttons">
+            <a href="https://portofolio.nexx.my.id" class="button">portofolio</a>
+            <a href="https://pl.nexx.my.id" class="button">Play List</a>
+            <a href="https://wa.me/62895360424437" class="button">WhatsApp Bot</a>
+            <a href="https://wa.me/62857106777264" class="button">Contact Me</a>
+        </div>
+        <div class="logos">
+            <a href="https://github.com/nexxid"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</body>
+</html>
